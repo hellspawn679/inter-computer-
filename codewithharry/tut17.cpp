@@ -17,7 +17,7 @@ float moneyrecived(int currentmoney, float factor =  1.04){
     return currentmoney*factor;
 }
 
-//const don't modify 
+//constant don't modify 
 //int strlen(const char *p)
  
 int main(){
@@ -27,6 +27,6 @@ int main(){
     cout<<"the product of a and b is "<< product(a,b)<<endl;
     int money = 100000;
    cout<<"if you have "<<money<<" rs in  your bank account, you will recive "<<moneyrecived(money)<< " rs after 1 year"<<endl;
-   cout<<"for VIP if you have "<<money<<" rs in  your bank account, you will recive "<<moneyrecived(money,1.1)<< " rs after 1 year";
+   cout<<"for VIP if you have "<<money<<" rs in  your bank account, you will recive "<<moneyrecived(money,1.1)<< " rs after 1 year"<<endl;
     return 0;
 }
