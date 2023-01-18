@@ -8,11 +8,11 @@ inline int product ( int a , int b){
 }
 // it is not recommeded to use inline in static varivable
 //int product(int a, int b){
-//static int c=0 // thsi excutes only once 
-// c= c+1; // next time this function is run , the vlaue of  c will be retained
+//static int c=0 // this excutes only once 
+// c= c+1; // next time this function is run , the value of  c will be retained
 // return a*b+c;
 //}
-// here defualt arrgumant should be one right  
+// here default arrgument should be one right  
 float moneyrecived(int currentmoney, float factor =  1.04){
     return currentmoney*factor;
 }
