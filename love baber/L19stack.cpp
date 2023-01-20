@@ -12,6 +12,5 @@ int main()
     cout<<"top element after pop is "<<s.top()<<endl;
     cout<<"size of stack is "<<s.size()<<endl;
     cout<<"empty or not "<<s.empty()<<endl;
-    
-     return 0;
+    return 0;
 }
