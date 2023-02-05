@@ -41,6 +41,7 @@ int main()
         cout << it << " ";
     }
     cout<<endl;
+    //cout<<s.size();
 
     return 0;
 }
