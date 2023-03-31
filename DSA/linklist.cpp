@@ -14,27 +14,31 @@ void insert_beg(int x)
     temp->next = head;
     head = temp;
 }
-void delete_nth( int pos)
+void reverse()
+{
+    node*temp1=head;
+    node*temp2=temp1->next;
+}
+void delete_nth(int pos)
 {
     node *temp1 = head;
-    
+
     int count = 1;
     if (pos == 1)
     {
-        
-        head=temp1->next;
+
+        head = temp1->next;
         free(temp1);
         return;
     }
-    while(count!=pos-1)
+    while (count != pos - 1)
     {
-        temp1=temp1->next;
+        temp1 = temp1->next;
         count++;
     }
-    node*temp2=temp1->next;
-    temp1->next=temp2->next;
+    node *temp2 = temp1->next;
+    temp1->next = temp2->next;
     free(temp2);
-    
 }
 void insert_nth(int x, int pos)
 {
@@ -90,7 +94,8 @@ int main()
         cout << "------------------------------------MENU-------------------------------------------" << endl;
         cout << "1)To insert an element at nth position in the link list" << endl;
         cout << "2)To delete an element at nth position in the link list" << endl;
-        cout << "3)Exit" << endl;
+        cout << "3)to reverse a link list " << endl ;
+        cout << "4)Exit" << endl;
         int dec;
         cin >> dec;
         if (dec == 1)
@@ -109,10 +114,15 @@ int main()
             cout << "which position you want to delete a element" << endl;
             int y;
             cin >> y;
-            delete_nth( y);
+            delete_nth(y);
             Print();
         }
         else if (dec == 3)
+        {
+            reverse();
+            Print();
+        }
+        else if (dec == 4)
         {
             break;
         }
